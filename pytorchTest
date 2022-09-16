@@ -4,6 +4,7 @@ import torchvision
 import imageio 
 import csv
 
+'''
 wine_path="../data/p1ch4/tabular-wine/winequality-white.csv"
 wine_numpy=np.loadtxt(wine_path,dtype=np.float32,delimiter=";",skiprows=1)
 
@@ -14,6 +15,14 @@ tense_img=torch.from_numpy(img_arr)
 print(tense_img)
 
 #out=img.permute(2,0,1)
+
+'''
+
+dimention0=torch.tensor([1,2,3,4])
+dimention1=torch.tensor([2,3,4,5])
+newtensor=torch.unsqueeze(dimention0,0)
+newtensor=torch.unsqueeze(dimention1,1)
+print(newtensor)
 
 
 print("hello world")
